@@ -1,0 +1,24 @@
+.carrito {
+    position: absolute;
+    right: 2rem;
+    z-index: 10;
+}
+
+.carrito button {
+    border: none;
+    background-color: transparent;
+}
+
+.carrito p {
+    position: absolute;
+    top: -0.2rem;
+    right: -0.5rem;
+    background-color: wheat /*temporal*/;
+    padding: 0px 5px;
+    border-radius: 50px;
+}
+
+.carrito button img {
+    object-fit: contain;
+    width: 50px;
+}
