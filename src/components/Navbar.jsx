@@ -1,6 +1,6 @@
 import CartWidget from './CartWidget'
 import './Navbar.css'
-import logo from '../assets/logo-logi.png'
+import logo from '../assets/img/logo-logi.png'
 
 function Navbar () {
     return (
