@@ -1,5 +1,10 @@
 * {
   box-sizing: border-box;
+}
+
+body, html {
+  background: radial-gradient(#30b5ca,#2d21b5, #220258, #0d0c0c, #071b2e);
+  background-size: 400% 100vh;
   margin: 0;
   padding: 0;
 }
