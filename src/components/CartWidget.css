@@ -1,21 +1,27 @@
 .carrito {
     position: absolute;
+    padding: 2px;
     right: 2rem;
     z-index: 10;
+    background-image: linear-gradient(160deg, #30b5ca,#2d21b5, #b489ff, #e073ec);
+    background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
 .carrito button {
     border: none;
-    background-color: transparent;
+    border-radius: 10px;
+    background-color: #000000;
 }
 
 .carrito p {
     position: absolute;
-    top: -0.2rem;
+    top: -1.2rem;
     right: -0.5rem;
-    background-color: wheat /*temporal*/;
+    background-color: rgb(255, 255, 255);
     padding: 0px 5px;
     border-radius: 50px;
+    color: rgb(0, 0, 0);
 }
 
 .carrito button img {
