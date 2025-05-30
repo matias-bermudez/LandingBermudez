@@ -6,7 +6,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <ItemListContainer slogan={'Lo mejor para que tu experiencia tecnologica sea superior'} />
+      <ItemListContainer 
+        titulo={'¡Bienvenido a la tienda Logitech!'}
+        slogan={'Lo mejor para que tu experiencia tecnologica sea superior'} 
+      />
     </>
   )
 }
