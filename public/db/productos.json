@@ -49,19 +49,11 @@
     },
     {
         "id": 7,
-        "nick": "MX Master 3S Black",
+        "nick": "MX Master 3S",
         "type": "ratones",
         "precio": "120",
         "img": "/img/ratones/mx-master-3s-top-b.webp",
         "description": "Mouse profesional MX Master 3S en color negro."
-    },
-    {
-        "id": 8,
-        "nick": "MX Master 3S White",
-        "type": "ratones",
-        "precio": "120",
-        "img": "/img/ratones/mx-master-3s-top-w.webp",
-        "description": "Mouse profesional MX Master 3S en color blanco."
     },
     {
     "id": 9,
@@ -153,7 +145,7 @@
     },
     {
         "id": 20,
-        "nick": "Gallery 2 Pro X 2 LIGHTSPEED",
+        "nick": "Pro X 2 LIGHTSPEED",
         "type": "auriculares",
         "precio": "250",
         "img": "/img/auriculares/gallery-1-pro-x-2-lightspeed-1.webp",
