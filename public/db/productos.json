@@ -1,0 +1,250 @@
+[
+    {
+        "id": 1,
+        "nick": "Ergo M575s",
+        "type": "ratones",
+        "precio": "50",
+        "img": "/img/ratones/ergo-m575s-top.webp",
+        "description": "Mouse ergonómico con trackball y conectividad inalámbrica."
+    },
+    {
+        "id": 2,
+        "nick": "G305 Black",
+        "type": "ratones",
+        "precio": "60",
+        "img": "/img/ratones/g305-top-b.webp",
+        "description": "Mouse gamer inalámbrico G305 en color negro."
+    },
+    {
+        "id": 3,
+        "nick": "G305 Blue",
+        "type": "ratones",
+        "precio": "60",
+        "img": "/img/ratones/g305-top-blue.webp",
+        "description": "Mouse gamer inalámbrico G305 en color azul."
+    },
+    {
+        "id": 4,
+        "nick": "G502 Lightspeed",
+        "type": "ratones",
+        "precio": "100",
+        "img": "/img/ratones/g502-lightspeed-top.webp",
+        "description": "Mouse gamer G502 Lightspeed con múltiples botones y gran precisión."
+    },
+    {
+        "id": 5,
+        "nick": "Lift",
+        "type": "ratones",
+        "precio": "70",
+        "img": "/img/ratones/lift-top-w.webp",
+        "description": "Mouse ergonómico vertical Lift color blanco."
+    },
+    {
+        "id": 6,
+        "nick": "M190 Wireless",
+        "type": "ratones",
+        "precio": "25",
+        "img": "/img/ratones/m190-wireless-top.webp",
+        "description": "Mouse inalámbrico M190 ideal para trabajo diario."
+    },
+    {
+        "id": 7,
+        "nick": "MX Master 3S Black",
+        "type": "ratones",
+        "precio": "120",
+        "img": "/img/ratones/mx-master-3s-top-b.webp",
+        "description": "Mouse profesional MX Master 3S en color negro."
+    },
+    {
+        "id": 8,
+        "nick": "MX Master 3S White",
+        "type": "ratones",
+        "precio": "120",
+        "img": "/img/ratones/mx-master-3s-top-w.webp",
+        "description": "Mouse profesional MX Master 3S en color blanco."
+    },
+    {
+    "id": 9,
+    "nick": "Brio 100",
+    "type": "camaras",
+    "precio": "50",
+    "img": "/img/camaras/brio-100-1.webp",
+    "description": "Cámara Brio 100 con resolución básica para videollamadas."
+    },
+    {
+        "id": 10,
+        "nick": "Brio 500",
+        "type": "camaras",
+        "precio": "90",
+        "img": "/img/camaras/brio-500-1.webp",
+        "description": "Cámara Brio 500 con calidad Full HD y corrección de luz automática."
+    },
+    {
+        "id": 11,
+        "nick": "C270",
+        "type": "camaras",
+        "precio": "40",
+        "img": "/img/camaras/c270-1.webp",
+        "description": "Cámara web C270 con micrófono incorporado y resolución HD."
+    },
+    {
+        "id": 12,
+        "nick": "C922",
+        "type": "camaras",
+        "precio": "75",
+        "img": "/img/camaras/c922-1.webp",
+        "description": "Cámara C922 ideal para streaming con calidad 1080p y 60fps."
+    },
+    {
+        "id": 13,
+        "nick": "MX Brio",
+        "type": "camaras",
+        "precio": "130",
+        "img": "/img/camaras/mx-brio-1.webp",
+        "description": "Cámara premium MX Brio con resolución 4K y enfoque automático."
+    },
+    {
+        "id": 14,
+        "nick": "StreamCam",
+        "type": "camaras",
+        "precio": "110",
+        "img": "/img/camaras/streamcam-1.webp",
+        "description": "Cámara StreamCam diseñada para creadores de contenido, con video fluido y montaje flexible."
+    },
+    {
+    "id": 15,
+    "nick": "A50",
+    "type": "auriculares",
+    "precio": "300",
+    "img": "/img/auriculares/a50-1.webp",
+    "description": "Auriculares inalámbricos A50 con sonido envolvente para gaming."
+    },
+    {
+        "id": 16,
+        "nick": "Fits",
+        "type": "auriculares",
+        "precio": "230",
+        "img": "/img/auriculares/fits-1.webp",
+        "description": "Auriculares inalámbricos Logitech Fits con moldeado personalizado."
+    },
+    {
+        "id": 17,
+        "nick": "G435",
+        "type": "auriculares",
+        "precio": "80",
+        "img": "/img/auriculares/g435-1.webp",
+        "description": "Auriculares G435 ultraligeros con conectividad LIGHTSPEED y Bluetooth."
+    },
+    {
+        "id": 18,
+        "nick": "G733",
+        "type": "auriculares",
+        "precio": "130",
+        "img": "/img/auriculares/g733-1.webp",
+        "description": "Auriculares G733 inalámbricos con diseño colorido y sonido inmersivo."
+    },
+    {
+        "id": 19,
+        "nick": "G735",
+        "type": "auriculares",
+        "precio": "180",
+        "img": "/img/auriculares/g735-1.webp",
+        "description": "Auriculares G735 diseñados para comodidad y personalización, ideales para largas sesiones de juego."
+    },
+    {
+        "id": 20,
+        "nick": "Gallery 2 Pro X 2 LIGHTSPEED",
+        "type": "auriculares",
+        "precio": "250",
+        "img": "/img/auriculares/gallery-1-pro-x-2-lightspeed-1.webp",
+        "description": "Auriculares profesionales con tecnología LIGHTSPEED para baja latencia y audio premium."
+    },
+    {
+        "id": 21,
+        "nick": "H390",
+        "type": "auriculares",
+        "precio": "50",
+        "img": "/img/auriculares/h390-1.webp",
+        "description": "Auriculares H390 con conexión USB y micrófono con cancelación de ruido."
+    },
+    {
+        "id": 22,
+        "nick": "Pro X 2",
+        "type": "auriculares",
+        "precio": "200",
+        "img": "/img/auriculares/pro-1.webp",
+        "description": "Auriculares Logitech Pro X 2 para esports, con sonido espacial y gran confort."
+    },
+    {
+        "id": 23,
+        "nick": "Ergo K860",
+        "type": "teclados",
+        "precio": "130",
+        "img": "/img/teclados/ergo-k860-top.webp",
+        "description": "Teclado ergonómico Ergo K860 dividido con reposamuñecas integrado."
+    },
+    {
+        "id": 24,
+        "nick": "G413",
+        "type": "teclados",
+        "precio": "90",
+        "img": "/img/teclados/g413-top.webp",
+        "description": "Teclado mecánico G413 con retroiluminación roja y estructura de aluminio."
+    },
+    {
+        "id": 25,
+        "nick": "G715",
+        "type": "teclados",
+        "precio": "200",
+        "img": "/img/teclados/g715-top.webp",
+        "description": "Teclado inalámbrico G715 con iluminación RGB y diseño personalizable."
+    },
+    {
+        "id": 26,
+        "nick": "G915 TKL",
+        "type": "teclados",
+        "precio": "250",
+        "img": "/img/teclados/g915-tkl-top.webp",
+        "description": "Teclado gamer G915 TKL inalámbrico con switches mecánicos low-profile."
+    },
+    {
+        "id": 27,
+        "nick": "K400",
+        "type": "teclados",
+        "precio": "45",
+        "img": "/img/teclados/k400-top.webp",
+        "description": "Teclado compacto K400 con touchpad integrado, ideal para media centers."
+    },
+    {
+        "id": 28,
+        "nick": "K650",
+        "type": "teclados",
+        "precio": "60",
+        "img": "/img/teclados/k650-top.webp",
+        "description": "Teclado inalámbrico K650 con teclas multimedia y diseño resistente a derrames."
+    },
+    {
+        "id": 29,
+        "nick": "Pebble K380s",
+        "type": "teclados",
+        "precio": "55",
+        "img": "/img/teclados/pebble-k380s-top.webp",
+        "description": "Teclado compacto y minimalista Pebble K380s con múltiples conexiones Bluetooth."
+    },
+    {
+        "id": 30,
+        "nick": "Pro X 60",
+        "type": "teclados",
+        "precio": "220",
+        "img": "/img/teclados/pro-x-60-top.webp",
+        "description": "Teclado gamer Pro X 60 con formato compacto y alto rendimiento."
+    },
+    {
+        "id": 31,
+        "nick": "Wave Keys",
+        "type": "teclados",
+        "precio": "85",
+        "img": "/img/teclados/wave-keys-top.webp",
+        "description": "Teclado ergonómico Wave Keys con diseño ondulado para mayor comodidad."
+    }
+]
