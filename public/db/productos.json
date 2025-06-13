@@ -145,23 +145,15 @@
     },
     {
         "id": 20,
-        "nick": "Pro X 2 LIGHTSPEED",
+        "nick": "Pro X2 LightSpeed",
         "type": "auriculares",
         "precio": "250",
         "img": "/img/auriculares/gallery-1-pro-x-2-lightspeed-1.webp",
         "description": "Auriculares profesionales con tecnología LIGHTSPEED para baja latencia y audio premium."
     },
     {
-        "id": 21,
-        "nick": "H390",
-        "type": "auriculares",
-        "precio": "50",
-        "img": "/img/auriculares/h390-1.webp",
-        "description": "Auriculares H390 con conexión USB y micrófono con cancelación de ruido."
-    },
-    {
         "id": 22,
-        "nick": "Pro X 2",
+        "nick": "Pro X2",
         "type": "auriculares",
         "precio": "200",
         "img": "/img/auriculares/pro-1.webp",

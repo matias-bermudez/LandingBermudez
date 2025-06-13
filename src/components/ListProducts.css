@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-SemiBold.ttf');
+}
+
 .contenedor-productos {
     display: flex;
     flex-direction: row;
@@ -5,24 +10,62 @@
     height: auto;
     align-items: center;
     justify-content: center;
-    width: calc(100% -200px);
-    margin: 10px 100px;
+    width: calc(100% -400px);
+    margin: 10px 200px;
     gap: 20px;
 }
 
-.producto {
-    background-color: rgba(255, 205, 205, 0.1);
+.auriculares, .ratones, .teclados, .camaras {
     margin: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 400px;
-    height: 700px;
-    border: 1px solid white;
+    height: 550px;
     border-radius: 10px;
+    margin: 30px 20px;
 }
 
-.producto .info-producto {
+.auriculares:hover, .ratones:hover,
+.teclados:hover, .camaras:hover {
+    background-color: rgba(255, 255, 255, 0.098);
+}
+
+.auriculares img, .ratones img, .teclados img, .camaras img {
+    object-fit: contain;
+    height: 350px;
+    transform: scale(1.1);
+}
+
+.auriculares img, .teclados img {
+    transform: scale(1.3);
+}
+
+.ratones:hover img {
+    transform: scale(1.3);
+    transition: 1000ms;
+}
+
+.auriculares:hover img, .teclados:hover img,
+.camaras:hover img {
+    transform: scale(1.6);
+    transition: 1000ms;
+}
+
+.teclados {
+    height: 400px;
+}
+
+.teclados .info-producto {
+    margin-top: -50px;
+}
+
+.teclados img {
+    height: 250px;
+}
+
+.auriculares .info-producto, .ratones .info-producto,
+.teclados .info-producto, .camaras .info-producto {
     display: flex;
     width: 100%;
     padding: 0px 20px;
@@ -30,13 +73,17 @@
     color: white;
 }
 
-.producto h1 {
-    font-size: 2.5rem;
+.auriculares h1, .ratones h1, .teclados h1, .camaras h1 {
+    font-size: 2.4rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
-.producto img{
-    object-fit: contain;
-    height: 450px;
+.auriculares h2, .ratones h2, .teclados h2, .camaras h2 {
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 0px;
 }
 
 .agregar-carrito {
@@ -44,7 +91,8 @@
     background-color: rgba(0, 0, 0, 0.2);
     border: none;
     padding: 10px;
-    width: 360px;
+    margin: 10px 0px;
+    width: 150px;
     height: 36px;
     border-radius: 8px;
     box-shadow: 0px 0px 5px #b489ff;
