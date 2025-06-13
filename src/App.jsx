@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import ItemListContainer from './components/ItemListContainer'
+import ProductDetail from './components/ProductDetail'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -21,6 +22,10 @@ function App() {
               slogan={'Encontrá lo mejor de cada tipo'}
             />
           } />
+          <Route path="/producto/:id" element={
+            <ProductDetail />
+          }
+          />
         </Routes>
       </BrowserRouter>
     </>
