@@ -1,0 +1,6 @@
+.detalle-producto {
+    background-color: red;
+    width: calc(100% - 600px);
+    margin: 100px 300px auto 300px;
+    padding: 20px 50px;
+}
