@@ -21,7 +21,7 @@ function ItemListContainer ({slogan, titulo}) {
                     const filtrados = data.filter(producto => producto.type === type)
                     setProductos(filtrados)
                 } else {
-                    setProductos(data)
+                    setProductos([])
                 }
             })
             .catch(err => console.log(err))
