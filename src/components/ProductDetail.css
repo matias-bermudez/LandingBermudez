@@ -1,6 +1,45 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-SemiBold.ttf');
+}
+
 .detalle-producto {
-    background-color: red;
-    width: calc(100% - 600px);
-    margin: 100px 300px auto 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.01);
+    width: calc(100% - 500px);
+    margin: 100px 250px auto 250px;
     padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.detalle-producto .fotos-info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.detalle-producto .fotos-info .texto-producto {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+}
+
+.detalle-producto img {
+    border-radius: 10px;
+    object-fit: contain;
+    height: 300px;
+    margin: 10px;
+}
+
+.detalle-producto img:hover {
+    transform: scale(1.3);
+    transition: 2000ms;
+}
+
+.detalle-producto h1, .detalle-producto h2 {
+    color: white;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
 }

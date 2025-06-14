@@ -32,11 +32,15 @@ function ProductDetail () {
 
     return (
         <section key={Producto.id} className="detalle-producto">
-            <img src={Producto.img} alt={Producto.nick} />
-            <img src={Producto.img2} alt={Producto.nick} />
-            <h1>{Producto.nick}</h1>
+            <div className="fotos-info">
+                <img src={Producto.img} alt={Producto.nick} />
+                <img src={Producto.img2} alt={Producto.nick} />
+                <div className="texto-producto">
+                    <h2>{Producto.nick}</h2>
+                    <h2>U$S {Producto.precio}</h2> 
+                </div>
+            </div>
             <h2>{Producto.description}</h2>
-            <h2>{Producto.precio}</h2>   
         </section>
     )
 }
