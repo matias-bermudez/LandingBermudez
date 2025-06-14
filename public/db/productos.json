@@ -14,7 +14,7 @@
         "precio": "50",
         "img": "/img/ratones/ergo-m575s-top.webp",
         "img2": "/img/ratones/ergo-m575s-front.webp",
-        "description": "Mouse ergonómico con trackball y conectividad inalámbrica."
+        "description": "El Ergo M575s es un mouse ergonómico con diseño de trackball que proporciona una experiencia cómoda durante largas horas de uso. Ideal para entornos con poco espacio, ofrece conectividad inalámbrica vía Bluetooth o receptor USB, garantizando precisión y control sin mover el brazo."
     },
     {
         "id": 2,
@@ -23,7 +23,7 @@
         "precio": "60",
         "img": "/img/ratones/g305-front-blue.webp",
         "img2": "/img/ratones/g305-top-blue.webp",
-        "description": "Mouse gamer inalámbrico G305 en color negro."
+        "description": "El G305 Blue es un mouse gamer compacto y liviano, perfecto para quienes buscan rendimiento sin cables. Con tecnología HERO de Logitech, brinda hasta 250 horas de duración de batería y un diseño ambidiestro en elegante color azul oscuro."
     },
     {
         "id": 4,
@@ -32,7 +32,7 @@
         "precio": "100",
         "img": "/img/ratones/g502-lightspeed-top.webp",
         "img2": "/img/ratones/g502-lightspeed-front.webp",
-        "description": "Mouse gamer G502 Lightspeed con múltiples botones y gran precisión."
+        "description": "El G502 Lightspeed combina la reconocida precisión del sensor HERO 25K con conectividad inalámbrica de alto rendimiento. Su estructura ligera, botones programables y diseño agresivo lo convierten en la opción preferida de los gamers más exigentes."
     },
     {
         "id": 5,
@@ -41,7 +41,7 @@
         "precio": "70",
         "img": "/img/ratones/lift-top-w.webp",
         "img2": "/img/ratones/lift-mouse-front-w.webp",
-        "description": "Mouse ergonómico vertical Lift color blanco."
+        "description": "Lift es un mouse ergonómico vertical diseñado para mejorar la postura y reducir la tensión muscular. Con un ángulo natural de agarre y botones silenciosos, es ideal para uso en oficina o trabajo remoto prolongado. Disponible en varios colores, incluyendo blanco."
     },
     {
         "id": 6,
@@ -50,7 +50,7 @@
         "precio": "25",
         "img": "/img/ratones/m190-wireless-top.webp",
         "img2": "/img/ratones/m190-wireless-front.webp",
-        "description": "Mouse inalámbrico M190 ideal para trabajo diario."
+        "description": "El M190 Wireless es un mouse inalámbrico de tamaño completo que ofrece comodidad durante todo el día. Gracias a su forma contorneada, es ideal para usuarios diestros y zurdos. Su batería de larga duración lo convierte en una excelente opción para el trabajo diario."
     },
     {
         "id": 7,
@@ -59,7 +59,7 @@
         "precio": "120",
         "img": "/img/ratones/mx-master-3s-top-b.webp",
         "img2": "/img/ratones/mx-master-3s-front-b.webp",
-        "description": "Mouse profesional MX Master 3S en color negro."
+        "description": "MX Master 3S es el mouse profesional definitivo de Logitech, con desplazamiento electromagnético MagSpeed, precisión mejorada y clics silenciosos. Su forma contorneada se adapta perfectamente a la mano, ideal para productividad y flujo de trabajo avanzado."
     },
     {
         "id": 9,
@@ -68,7 +68,7 @@
         "precio": "50",
         "img": "/img/camaras/brio-100-1.webp",
         "img2": "/img/camaras/brio-100-2.webp",
-        "description": "Cámara Brio 100 con resolución básica para videollamadas."
+        "description": "La Brio 100 es una cámara web sencilla pero efectiva, ideal para videollamadas en alta definición. Su diseño compacto y fácil instalación la hacen perfecta para estudiantes, profesionales y usuarios domésticos que buscan buena calidad a bajo costo."
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "precio": "90",
         "img": "/img/camaras/brio-500-1.webp",
         "img2": "/img/camaras/brio-500-2.webp",
-        "description": "Cámara Brio 500 con calidad Full HD y corrección de luz automática."
+        "description": "La Brio 500 ofrece video Full HD, corrección automática de iluminación y encuadre inteligente. Diseñada para videollamadas profesionales, cuenta con micrófonos de reducción de ruido y un diseño moderno que se adapta a cualquier entorno de trabajo."
     },
     {
         "id": 11,
