@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './ProductDetail.css'
 function ProductDetail () {
@@ -15,7 +15,7 @@ function ProductDetail () {
     useEffect(() => {
         getProductos()
             .then(data => {
-                if(id) {
+                if(id != -1 && id == "") {
                     const encontrado = data.find(producto => producto.id == id)
                     setProducto(encontrado)
                 } else {
@@ -37,10 +37,17 @@ function ProductDetail () {
                 <img src={Producto.img2} alt={Producto.nick} />
                 <div className="texto-producto">
                     <h2>{Producto.nick}</h2>
-                    <h2>U$S {Producto.precio}</h2> 
+                    <div>
+                        <h2>U$S {Producto.precio}</h2>
+                        <p> | </p>
+                        <h2>Hasta 10 cuotas sin recargo</h2>
+                        <button>Comprar</button>
+                    </div>
                 </div>
             </div>
-            <h2>{Producto.description}</h2>
+            <h3>Descripción</h3>
+            <p>{Producto.description}</p>
+            <table></table>
         </section>
     )
 }
