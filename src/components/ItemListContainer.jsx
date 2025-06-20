@@ -7,24 +7,18 @@ function ItemListContainer ({slogan, titulo}) {
     const [productos, setProductos] = useState([])
     const {type} = useParams()
 
-    const getProductos = () => {
-        return fetch('/db/productos.json')
-                .then((response) => response.json())
-                .then(data => { return data })
-                .catch((err) => console.log(err))
-    }
-
     useEffect(() => {
-        getProductos()
-            .then(data => {
-                if(type) {
-                    const filtrados = data.filter(producto => producto.type === type)
-                    setProductos(filtrados)
-                } else {
-                    const filtrados = data.filter(producto => producto.id != -1)
-                    setProductos(filtrados)                }
-            })
-            .catch(err => console.log(err))
+        if(type) {
+            fetch(`https://dummyjson.com/products/category/${type}`)
+                .then((response) => response.json())
+                .then((data) => setProductos(data.products))
+                .catch((err) => console.log(err))
+            } else { 
+                fetch(`https://dummyjson.com/products/`)
+                    .then((response) => response.json())
+                    .then((data) => setProductos(data.products))
+                    .catch((err) => console.log(err))
+            }
     }, [type])
 
     return (

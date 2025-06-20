@@ -16,7 +16,7 @@ function App() {
               slogan={'Lo mejor para que tu experiencia tecnológica sea superior'}
             />
           } />
-          <Route path="/categoria/:type" element={
+          <Route path="/category/:type" element={
             <ItemListContainer
               titulo={'Productos por categoría'}
               slogan={'Encontrá lo mejor de cada tipo'}
