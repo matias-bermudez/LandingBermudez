@@ -12,83 +12,89 @@
     justify-content: center;
     width: calc(100% -400px);
     margin: 10px 200px;
-    gap: 20px;
+    gap: 10px 50px;
 }
 
-.auriculares, .ratones, .teclados, .camaras {
+.contenedor-productos a {
+    text-decoration: none;
+}
+
+.contenedor-productos a h1 {
+    font-size: 2rem;
+}
+
+.smartphones a, .mens-watches a, .motorcycle a, .laptops a {
     margin: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 400px;
-    height: 550px;
+    height: 650px;
     border-radius: 10px;
     margin: 30px 20px;
 }
 
-.auriculares:hover, .ratones:hover,
-.teclados:hover, .camaras:hover {
+.mens-watches {
+    margin: 150px 0;
+    height: ;
+}
+
+.mens-watches a {
+    margin: 20px 0px;
+}
+
+.smartphones:hover, .motorcycle:hover,
+.mens-watches:hover, .laptops:hover {
     background-color: rgba(255, 255, 255, 0.098);
 }
 
-.auriculares img, .ratones img, .teclados img, .camaras img {
+.smartphones img, .motorcycle img, .mens-watches img, .laptops img {
     object-fit: contain;
-    height: 350px;
+    height: 300px;
     transform: scale(1.1);
 }
 
-.auriculares img, .teclados img {
+.smartphones img, .mens-watches img {
     transform: scale(1.3);
 }
 
-.ratones:hover img, .camaras:hover img {
+.motorcycle:hover img, .laptops:hover img {
     transform: scale(1.3);
     transition: 1000ms;
 }
 
-.auriculares:hover img, .teclados:hover img {
-    transform: scale(1.6);
-    transition: 1000ms;
-}
-
-.teclados {
-    height: 400px;
-}
-
-.teclados .info-producto {
+.mens-watches {
     margin-top: -50px;
 }
 
-.teclados img {
+.mens-watches img {
     height: 250px;
 }
 
-.auriculares .info-producto, .ratones .info-producto,
-.teclados .info-producto, .camaras .info-producto {
+.smartphones , .motorcycle,
+.mens-watches, .laptops {
     display: flex;
-    width: 100%;
+    width: 500px;
     padding: 0px 20px;
     flex-direction: column;
     color: white;
 }
 
-.auriculares h1, .ratones h1, .teclados h1, .camaras h1 {
-    font-size: 2.4rem;
+.smartphones h1, .motorcycle h1,
+.mens-watches h1, .laptops h1 {
+    font-size: 2.5rem;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
 
-.auriculares h2, .ratones h2, .teclados h2, .camaras h2 {
+.smartphones a h2, .motorcycle a h2,
+.mens-watches a h2, .laptops a h2 {
     font-size: 1.5rem;
     color: white;
     font-family: 'Poppins', sans-serif;
     margin: 5px 0px;
 }
-
-.auriculares a, .ratones a, .teclados a, .camaras a {
-    text-decoration: none;
-}
-
 
 .agregar-carrito {
     color: white;
