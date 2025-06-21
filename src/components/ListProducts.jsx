@@ -4,14 +4,14 @@ function ListProducts ( {productos} ) {
     return (
         <section className="contenedor-productos">
             {
-                productos.map(producto => (
+                productos
+                .filter(producto => producto.title.length <= 25)
+                .map(producto => (
                     <div key={producto.id} className={producto.category}>
-                        <Link to={`/producto/${producto.id}`}>
+                        <Link to={`/products/${producto.id}`}>
                             <img src={producto.thumbnail} alt="" />
-                            <div className="info-producto">
-                                <h1>{producto.title}</h1>
-                                <h2>U$S {producto.price}</h2>
-                            </div>
+                            <h1>{producto.title}</h1>
+                            <h2>U$S {producto.price}</h2>
                             <div className="contenedor-boton">
                                 <button className="agregar-carrito">Agregar al Carrito</button>
                             </div>
