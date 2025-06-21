@@ -22,7 +22,7 @@ function App() {
               slogan={'Encontrá lo mejor de cada tipo'}
             />
           } />
-          <Route path="/producto/:id" element={
+          <Route path="/products/:id" element={
             <ProductDetail />
           }
           />

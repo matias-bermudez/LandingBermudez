@@ -6,7 +6,7 @@ function ListProducts ( {productos} ) {
             {
                 productos.map(producto => (
                     <div key={producto.id} className={producto.category}>
-                        <Link to={`/producto/${producto.id}`}>
+                        <Link to={`/products/${producto.id}`}>
                             <img src={producto.thumbnail} alt="" />
                             <div className="info-producto">
                                 <h1>{producto.title}</h1>
