@@ -1,12 +1,11 @@
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import './ProductDetail.css'
-function ProductDetail () {
+import './ItemDetail.css'
+import ItemCount from './ItemCount'
+function ItemDetail () {
     const {id} = useParams()
     const [Producto, setProducto] = useState(null)
     const [imagenes, setImagenes] = useState(false)
-
-
 
     useEffect(() => {
         if(id) {
@@ -38,13 +37,14 @@ function ProductDetail () {
                             <h2>U$S {Producto.price}</h2>
                             <p> | </p>
                             <h2>Hasta 10 cuotas sin recargo</h2>
+                            <p> | </p>
+                            <ItemCount />
                             <button>Comprar</button>
                         </div>
                     </div>
                 </div>
                 <h3>Descripción</h3>
                 <p>{Producto.description}</p>
-                <table></table>
             </section>
         )
     } else {
@@ -59,16 +59,17 @@ function ProductDetail () {
                             <h2>U$S {Producto.price}</h2>
                             <p> | </p>
                             <h2>Hasta 10 cuotas sin recargo</h2>
+                            <p> | </p>
+                            <ItemCount />
                             <button>Comprar</button>
                         </div>
                     </div>
                 </div>
                 <h3>Descripción</h3>
                 <p>{Producto.description}</p>
-                <table></table>
             </section>
         )
     }
 }
 
-export default ProductDetail
+export default ItemDetail

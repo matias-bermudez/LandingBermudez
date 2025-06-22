@@ -18,6 +18,7 @@
 .detalle-producto .fotos-info {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     width: 100%;
     gap: 10px;
 }
@@ -27,7 +28,7 @@
     flex-direction: column;
     text-align: left;
     justify-content: center;
-    margin: auto 15px;
+    margin: 10px 15px;
 }
 
 .detalle-producto .fotos-info .texto-producto div {
@@ -37,6 +38,7 @@
     align-items: center;
     gap: 10px;
     padding: 10px 50px;
+    margin-top: 10px;
 }
 
 .detalle-producto .fotos-info .texto-producto div h2 {

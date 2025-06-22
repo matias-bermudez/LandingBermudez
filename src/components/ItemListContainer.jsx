@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import './ItemListContainer.css'
 import { useState, useEffect } from 'react'
-import ListProducts from './ListProducts'
+import ItemList from './ItemList'
 
 function ItemListContainer ({slogan, titulo}) {
     const [productos, setProductos] = useState([])
@@ -25,7 +25,7 @@ function ItemListContainer ({slogan, titulo}) {
         <section className="base-productos">
             <h1>{titulo}</h1>
             <h2 className="slogan">{slogan}</h2>
-            <ListProducts productos={productos} />
+            <ItemList productos={productos} />
         </section>
     );
 }

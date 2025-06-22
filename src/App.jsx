@@ -1,8 +1,8 @@
 import Navbar from './components/Navbar'
 import ItemListContainer from './components/ItemListContainer'
-import ProductDetail from './components/ProductDetail'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import ItemDetail from './components/ItemDetail'
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             />
           } />
           <Route path="/products/:id" element={
-            <ProductDetail />
+            <ItemDetail />
           }
           />
         </Routes>
