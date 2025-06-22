@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: center;
     width: calc(100% -400px);
-    margin: 10px 200px;
+    margin: 100px 200px;
     gap: 10px 50px;
 }
 
@@ -21,6 +21,7 @@
 
 .contenedor-productos a h1 {
     font-size: 2rem;
+    text-align: center;
 }
 
 .smartphones a, .mens-watches a, .motorcycle a, .laptops a {
@@ -35,10 +36,6 @@
     margin: 30px 20px;
 }
 
-.mens-watches {
-    margin: 150px 0;
-}
-
 .mens-watches a {
     margin: 20px 0px;
 }
@@ -46,6 +43,7 @@
 .smartphones:hover, .motorcycle:hover,
 .mens-watches:hover, .laptops:hover {
     background-color: rgba(255, 255, 255, 0.098);
+    border-radius: 10px;
 }
 
 .smartphones img, .motorcycle img, .mens-watches img, .laptops img {
@@ -71,20 +69,16 @@
     height: 250px;
 }
 
-.smartphones , .motorcycle,
+.smartphones, .motorcycle,
 .mens-watches, .laptops {
     display: flex;
-    width: 500px;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 600px;
     padding: 0px 20px;
     flex-direction: column;
     color: white;
-}
-
-.smartphones h1, .motorcycle h1,
-.mens-watches h1, .laptops h1 {
-    font-size: 2.5rem;
-    color: white;
-    font-family: 'Poppins', sans-serif;
 }
 
 .smartphones a h2, .motorcycle a h2,

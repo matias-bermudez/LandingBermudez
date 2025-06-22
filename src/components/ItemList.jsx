@@ -1,6 +1,6 @@
-import './ListProducts.css'
+import './ItemList.css'
 import { Link } from 'react-router-dom';
-function ListProducts ( {productos} ) {
+function ItemList ( {productos} ) {
     return (
         <section className="contenedor-productos">
             {
@@ -23,4 +23,4 @@ function ListProducts ( {productos} ) {
     );
 }
 
-export default ListProducts
+export default ItemList
