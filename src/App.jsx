@@ -3,6 +3,7 @@ import ItemListContainer from './components/ItemListContainer'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ItemDetail from './components/ItemDetail'
+import ItemDetailContainer from './components/ItemDetailContainer'
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
             />
           } />
           <Route path="/products/:id" element={
-            <ItemDetail />
+            <ItemDetailContainer />
           }
           />
         </Routes>

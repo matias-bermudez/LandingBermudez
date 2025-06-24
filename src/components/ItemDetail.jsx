@@ -1,40 +1,17 @@
-import { useParams } from 'react-router-dom'
-import { useEffect, useState } from 'react'
 import './ItemDetail.css'
 import ItemCount from './ItemCount'
-function ItemDetail () {
-    const {id} = useParams()
-    const [Producto, setProducto] = useState(null)
-    const [imagenes, setImagenes] = useState(false)
+function ItemDetail ( { producto } ) {
+        if (!producto) return <p>Cargando...</p>;
 
-    useEffect(() => {
-        if(id) {
-            fetch(`https://dummyjson.com/products/${id}`)
-                .then((response) => response.json())
-                .then(res => {
-                    if(res.images.length > 1) {
-                        setImagenes(true)
-                    }
-                    setProducto(res)
-                })
-                .then(console.log);
-        } else {
-            //algo
-        }
-    }, [id])
-
-    if(!Producto) {
-        return <p>Cargando ...</p>
-    }
-    if(!imagenes) {
+    if(!producto.image?.length > 1) {
         return (
-            <section key={Producto.id} className="detalle-producto">
+            <section key={producto.id} className="detalle-producto">
                 <div className="fotos-info">
-                    <img src={Producto.thumbnail} alt={Producto.nick} />
+                    <img src={producto.thumbnail} alt={producto.nick} />
                     <div className="texto-producto">
-                        <h2>{Producto.title}</h2>
+                        <h2>{producto.title}</h2>
                         <div>
-                            <h2>U$S {Producto.price}</h2>
+                            <h2>U$S {producto.price}</h2>
                             <p> | </p>
                             <h2>Hasta 10 cuotas sin recargo</h2>
                             <p> | </p>
@@ -44,19 +21,19 @@ function ItemDetail () {
                     </div>
                 </div>
                 <h3>Descripción</h3>
-                <p>{Producto.description}</p>
+                <p>{producto.description}</p>
             </section>
         )
     } else {
         return (
-            <section key={Producto.id} className="detalle-producto">
+            <section key={producto.id} className="detalle-producto">
                 <div className="fotos-info">
-                    <img src={Producto.thumbnail} alt={Producto.nick} />
-                    <img src={Producto.images[1]} alt={Producto.nick} />
+                    <img src={producto.thumbnail} alt={producto.nick} />
+                    <img src={producto.images[1]} alt={producto.nick} />
                     <div className="texto-producto">
-                        <h2>{Producto.title}</h2>
+                        <h2>{producto.title}</h2>
                         <div>
-                            <h2>U$S {Producto.price}</h2>
+                            <h2>U$S {producto.price}</h2>
                             <p> | </p>
                             <h2>Hasta 10 cuotas sin recargo</h2>
                             <p> | </p>
@@ -66,10 +43,11 @@ function ItemDetail () {
                     </div>
                 </div>
                 <h3>Descripción</h3>
-                <p>{Producto.description}</p>
+                <p>{producto.description}</p>
             </section>
         )
     }
 }
+
 
 export default ItemDetail
