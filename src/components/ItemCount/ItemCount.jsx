@@ -1,11 +1,12 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
 import "./ItemCount.css"
+import { CartContext } from "../../context/CartContext"
 
-function ItemCount() {
-    const [count, setCount] = useState(0)
-
+function ItemCount( { item } ) {
+    const [count, setCount] = useState(1)
+    const { addToCart } = useContext(CartContext)
     const handleResta = () => {
-        if(count > 0 ){
+        if(count > 1 ){
             setCount(count - 1)
         }    
     }
@@ -16,6 +17,10 @@ function ItemCount() {
         }
     }
 
+    const handleAddToCart = () => {
+        addToCart({...item, quantity: count})
+    }
+
     return (
         <section>
             <div className="botones">
@@ -23,7 +28,7 @@ function ItemCount() {
                 <h2>{count}</h2>
                 <button onClick={handleSuma}>+</button>
             </div> 
-                <button>Agregar Al carrito</button>
+                <button onClick={handleAddToCart}>Agregar Al carrito</button>
         </section>       
     )
 }
