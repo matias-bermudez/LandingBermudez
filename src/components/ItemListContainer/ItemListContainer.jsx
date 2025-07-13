@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom'
 import './ItemListContainer.css'
 import { useState, useEffect } from 'react'
-import ItemList from './ItemList'
+import ItemList from '../ItemList/ItemList'
 
 function ItemListContainer ({slogan, titulo}) {
     const [productos, setProductos] = useState([])
