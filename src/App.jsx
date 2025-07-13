@@ -1,9 +1,8 @@
-import Navbar from './components/Navbar'
-import ItemListContainer from './components/ItemListContainer'
+import Navbar from './components/Navbar/Navbar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import ItemDetail from './components/ItemDetail'
-import ItemDetailContainer from './components/ItemDetailContainer'
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 
 function App() {
   return (

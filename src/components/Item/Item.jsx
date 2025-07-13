@@ -8,9 +8,6 @@ function Item( {producto} ) {
                 <img src={producto.thumbnail} alt="" />
                 <h1>{producto.title}</h1>
                 <h2>U$S {producto.price}</h2>
-                <div className="contenedor-boton">
-                    <button className="agregar-carrito">Agregar al Carrito</button>
-                </div>
             </Link>
         </div>
     )

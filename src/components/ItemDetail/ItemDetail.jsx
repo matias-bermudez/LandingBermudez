@@ -1,5 +1,5 @@
 import './ItemDetail.css'
-import ItemCount from './ItemCount'
+import ItemCount from '../ItemCount/ItemCount'
 function ItemDetail ( { producto } ) {
         if (!producto) return <p>Cargando...</p>;
 
