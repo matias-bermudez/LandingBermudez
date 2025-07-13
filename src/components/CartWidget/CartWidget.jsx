@@ -1,9 +1,12 @@
 import logoCarrito from '../../assets/img/carrito.png'
 import './CartWidget.css'
+import { useContext } from 'react'
+import { CartContext } from '../../context/CartContext'
 
 function CartWidget () {
+    const { getQuantity } = useContext(CartContext)
+    const contador = getQuantity();
 
-    const contador = 2;
     return (
         <div className="carrito">
             <button><a href=""><img src={logoCarrito} alt="Imagen de carrito de compras"/></a></button>

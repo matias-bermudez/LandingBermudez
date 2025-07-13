@@ -15,7 +15,7 @@ function ItemDetail ( { producto } ) {
                             <p> | </p>
                             <h2>Hasta 10 cuotas sin recargo</h2>
                             <p> | </p>
-                            <ItemCount />
+                            <ItemCount item={producto}/>
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@ function ItemDetail ( { producto } ) {
                             <p> | </p>
                             <h2>Hasta 10 cuotas sin recargo</h2>
                             <p> | </p>
-                            <ItemCount />
+                            <ItemCount item={producto}/>
                         </div>
                     </div>
                 </div>
