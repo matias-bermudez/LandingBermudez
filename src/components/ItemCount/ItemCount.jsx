@@ -17,11 +17,14 @@ function ItemCount() {
     }
 
     return (
-        <div className="botones">
-            <button onClick={handleResta}>-</button>
-            <h2>{count}</h2>
-            <button onClick={handleSuma}>+</button>
-        </div>
+        <section>
+            <div className="botones">
+                <button onClick={handleResta}>-</button>
+                <h2>{count}</h2>
+                <button onClick={handleSuma}>+</button>
+            </div> 
+                <button>Agregar Al carrito</button>
+        </section>       
     )
 }
 

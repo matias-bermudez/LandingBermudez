@@ -10,13 +10,12 @@ function ItemDetail ( { producto } ) {
                     <img src={producto.thumbnail} alt={producto.nick} />
                     <div className="texto-producto">
                         <h2>{producto.title}</h2>
-                        <div>
+                        <div className="compra">
                             <h2>U$S {producto.price}</h2>
                             <p> | </p>
                             <h2>Hasta 10 cuotas sin recargo</h2>
                             <p> | </p>
                             <ItemCount />
-                            <button>Comprar</button>
                         </div>
                     </div>
                 </div>
@@ -38,7 +37,6 @@ function ItemDetail ( { producto } ) {
                             <h2>Hasta 10 cuotas sin recargo</h2>
                             <p> | </p>
                             <ItemCount />
-                            <button>Comprar</button>
                         </div>
                     </div>
                 </div>
