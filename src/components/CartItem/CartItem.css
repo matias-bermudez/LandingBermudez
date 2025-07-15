@@ -1,10 +1,37 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-SemiBold.ttf');
+}
+
 .prod-carrito {
-    width: calc(100% -100px);
-    margin: 10px 50px;
+    width: calc(100% -50px);
+    margin: 10px 25px;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    background-color: violet;
+    background-color: transparent;
+    height: 200px;
+    box-shadow: 0px 0px 10px white;
+    border-radius: 10px;
+    padding: 0px 50px;
+}
+
+.prod-carrito .info-txt {
+    width: 700px;
+    margin: 0px 20px;
+}
+
+.prod-carrito h2, .prod-carrito h3, .prod-carrito p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.prod-carrito h3 {
+    color: rgb(169, 169, 169);
+}
+
+.prod-carrito img{
+    object-fit: contain;
     height: 100px;
 }
