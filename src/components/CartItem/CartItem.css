@@ -1,0 +1,10 @@
+.prod-carrito {
+    width: calc(100% -100px);
+    margin: 10px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: violet;
+    height: 100px;
+}

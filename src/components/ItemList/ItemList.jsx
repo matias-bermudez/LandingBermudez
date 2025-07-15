@@ -6,7 +6,7 @@ function ItemList ( {productos} ) {
                 productos
                 .filter(producto => producto.title.length <= 25)
                 .map(producto => (
-                    <Item producto={producto}/>
+                    <Item key={producto.id} producto={producto}/>
                 ))
             }
         </section>

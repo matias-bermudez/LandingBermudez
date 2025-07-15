@@ -1,0 +1,10 @@
+.seccion-carrito {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    min-height: 1vh;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+}
