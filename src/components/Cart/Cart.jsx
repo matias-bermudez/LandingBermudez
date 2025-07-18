@@ -5,7 +5,6 @@ import './Cart.css'
 
 function Cart () {
     const { cart } = useContext(CartContext)
-    console.log("contenido del carrito", cart)
     if(cart) {
         return (
             <section className="seccion-carrito">
@@ -17,7 +16,6 @@ function Cart () {
             </section>
         )
     } else {
-        console.log("no ai nad")
     }
     
 }

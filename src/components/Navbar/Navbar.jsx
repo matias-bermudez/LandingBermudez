@@ -7,11 +7,11 @@ function Navbar () {
     return (
         <nav className="navbar">
             <ul>
-                <li><Link to="/category/smartphones">Celulares</Link></li>
-                <li><Link to="/category/laptops">Laptops</Link></li>
+                <li><Link to="/category/mouse">Mouses</Link></li>
+                <li><Link to="/category/headphones">Headphones</Link></li>
                 <li><Link to="/"><img src={logo} alt="Logo Logitech"/></Link></li>
-                <li><Link to="/category/mens-watches">Relojes</Link></li>
-                <li><Link to="/category/motorcycle">Birodados</Link></li>
+                <li><Link to="/category/keyboard">Keyboard</Link></li>
+                <li><Link to="/category/web-cams">Web Cams</Link></li>
             </ul>
             <CartWidget />
         </nav>
