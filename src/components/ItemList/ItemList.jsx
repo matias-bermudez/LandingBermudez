@@ -3,9 +3,7 @@ function ItemList ( {productos} ) {
     return (
         <section className="contenedor-productos">
             {
-                productos
-                .filter(producto => producto.title.length <= 25)
-                .map(producto => (
+                productos.map(producto => (
                     <Item key={producto.id} producto={producto}/>
                 ))
             }

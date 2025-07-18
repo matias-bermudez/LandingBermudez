@@ -28,7 +28,7 @@ function ItemCount( { item } ) {
                 <h2>{count}</h2>
                 <button onClick={handleSuma}>+</button>
             </div> 
-                <button onClick={handleAddToCart}>Agregar Al carrito</button>
+                <button onClick={handleAddToCart}>Agregar - <br /> Quitar</button>
         </section>       
     )
 }

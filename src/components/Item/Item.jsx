@@ -5,8 +5,8 @@ function Item( {producto} ) {
     return (
         <div key={producto.id} className={producto.category}>
             <Link to={`/products/${producto.id}`}>
-                <img src={producto.thumbnail} alt="" />
-                <h1>{producto.title}</h1>
+                <img src={producto.img1} alt={producto.name} />
+                <h1>{producto.name}</h1>
                 <h2>U$S {producto.price}</h2>
             </Link>
         </div>

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-SemiBold.ttf');
+}
+
 .carrito {
     position: absolute;
     padding: 2px;
@@ -15,6 +20,7 @@
 }
 
 .carrito p {
+    font-family: 'Poppins', sans-serif;
     position: absolute;
     top: -1.2rem;
     right: -0.5rem;

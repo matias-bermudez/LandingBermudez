@@ -5,7 +5,20 @@ function CartProvider ( {children} ) {
     const [cart, setCart] = useState([])
     
     const addToCart = (product) => {
-        setCart([...cart, product])
+        const indice = cart.findIndex( prod => prod.id == product.id) 
+        if(indice == -1) {
+            setCart([...cart, product])
+        } else {
+            const cartUpdate = [...cart]
+            const prod = {...cartUpdate[indice]}
+            if(product.quantity < prod.quantity) {
+                prod.quantity -= Math.abs(prod.quantity - product.quantity)
+            } else {
+                prod.quantity += Math.abs(prod.quantity - product.quantity)
+            }
+            cartUpdate[indice] = prod
+            setCart(cartUpdate)
+        }
     }
 
     const getQuantity = () => {
