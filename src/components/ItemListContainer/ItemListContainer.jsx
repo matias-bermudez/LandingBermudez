@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom'
 import './ItemListContainer.css'
 import { useState, useEffect } from 'react'
 import ItemList from '../ItemList/ItemList'
-import { getProducts } from '../../firebase/db'
+import { getProducts, getProductsByCategory } from '../../firebase/db'
 
 function ItemListContainer ({slogan, titulo}) {
     const [productos, setProductos] = useState([])
@@ -10,14 +10,13 @@ function ItemListContainer ({slogan, titulo}) {
 
     useEffect(() => {
         if(type) {
-            getProducts()
-                .then(res => res.filter(prods => prods.category == type))
+            getProductsByCategory(type)
                 .then(res => setProductos(res))
                 .catch((err) => console.log(err))
-            } else { 
-                getProducts()
-                    .then(res => setProductos(res))
-                    .catch((err) => console.log(err))
+        } else { 
+            getProducts()
+                .then(res => setProductos(res))
+                .catch((err) => console.log(err))
             }
     }, [type])
 
