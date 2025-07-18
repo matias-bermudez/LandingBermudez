@@ -1,4 +1,5 @@
 import Item from '../Item/Item'
+import './ItemList.css'
 function ItemList ( {productos} ) {
     return (
         <section className="contenedor-productos">
