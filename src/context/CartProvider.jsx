@@ -11,11 +11,7 @@ function CartProvider ( {children} ) {
         } else {
             const cartUpdate = [...cart]
             const prod = {...cartUpdate[indice]}
-            if(product.quantity < prod.quantity) {
-                prod.quantity -= Math.abs(prod.quantity - product.quantity)
-            } else {
-                prod.quantity += Math.abs(prod.quantity - product.quantity)
-            }
+            prod.quantity +=  product.quantity
             cartUpdate[indice] = prod
             setCart(cartUpdate)
         }

@@ -22,13 +22,13 @@ function ItemCount( { item } ) {
     }
 
     return (
-        <section>
-            <div className="botones">
+        <section className="counter-detail">
+            <div className="botones-detail">
                 <button onClick={handleResta}>-</button>
                 <h2>{count}</h2>
                 <button onClick={handleSuma}>+</button>
             </div> 
-                <button onClick={handleAddToCart}>Agregar - <br /> Quitar</button>
+            <button className="agregar-boton-detail" onClick={handleAddToCart}>Agregar</button>
         </section>       
     )
 }
