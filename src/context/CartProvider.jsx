@@ -63,8 +63,12 @@ function CartProvider ( {children} ) {
         }
     }
 
+    const eraseCart = () => {
+        setCart([])
+    }
+
     return (
-        <CartContext.Provider value={ {cart, addToCart, getQuantity, eraseItem, subItem, addItem} }>
+        <CartContext.Provider value={ {cart, addToCart, getQuantity, eraseItem, subItem, addItem, eraseCart} }>
             {children}
         </CartContext.Provider>
     )

@@ -3,7 +3,7 @@ import './CartDetail.css'
 import { CartContext } from '../../context/CartContext'
 
 function CartDetail () {
-    const { cart } = useContext(CartContext)
+    const { cart, eraseCart } = useContext(CartContext)
     let cantidad = 0
     let precio = 0
     cart.forEach(prod => {
@@ -16,7 +16,7 @@ function CartDetail () {
             <h2>|</h2>
             <h2> Precio final: U$D {precio}</h2>
             <h2>|</h2>
-            <button>Vaciar</button>
+            <button onClick={eraseCart}>Vaciar</button>
             <h2>|</h2>
             <button>Continuar</button>
         </div>
