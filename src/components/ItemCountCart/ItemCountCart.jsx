@@ -25,13 +25,13 @@ function ItemCountCart ( {item} ) {
         }
     
         return (
-            <section>
-                <div className="botones">
+            <section className="counter-detail">
+                <div className="botones-detail">
                     <button onClick={handleResta}>-</button>
                     <h2>{count}</h2>
                     <button onClick={handleSuma}>+</button>
                 </div> 
-                    <button onClick={handleErase}>🗑️</button>
+                    <button className="vaciar-carrito" onClick={handleErase}>🗑️</button>
             </section>       
         )
 }

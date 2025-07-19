@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-SemiBold.ttf');
+}
+
+.datos-facturacion {
+    display: flex;
+    width: calc(100% -50px);
+    margin: 10px 25pxcc;
+    align-items: center;
+    justify-content: left;
+    gap: 15px;
+    justify-content: space-between ;
+    text-align: center;
+}
+
+.datos-facturacion h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
