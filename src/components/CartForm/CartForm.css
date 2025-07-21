@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-SemiBold.ttf');
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% -1600px);
+    margin: 10px 800px;
+    gap: 25px;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.formulario label, .formulario input::placeholder, .formulario select {
+    font-family: 'Poppins', sans-serif;
+}
+
+.formulario input {
+    padding: 5px;
+}
+
+.formulario div {
+    display: flex;
+    justify-content: space-around;
+}

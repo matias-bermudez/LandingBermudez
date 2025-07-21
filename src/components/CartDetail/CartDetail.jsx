@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import './CartDetail.css'
 import { CartContext } from '../../context/CartContext'
+import { Link } from 'react-router-dom'
 
 function CartDetail () {
     const { cart, eraseCart } = useContext(CartContext)
@@ -18,7 +19,9 @@ function CartDetail () {
             <h2>|</h2>
             <button onClick={eraseCart}>Vaciar</button>
             <h2>|</h2>
-            <button>Continuar</button>
+            <Link to="/cart/form">
+                <button>Continuar</button>
+            </Link>
         </div>
     )
 }
