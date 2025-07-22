@@ -4,13 +4,9 @@ import { CartContext } from '../../context/CartContext'
 import { Link } from 'react-router-dom'
 
 function CartDetail () {
-    const { cart, eraseCart } = useContext(CartContext)
-    let cantidad = 0
-    let precio = 0
-    cart.forEach(prod => {
-        cantidad += prod.quantity 
-        precio += (prod.quantity * prod.price)
-    })
+    const { eraseCart, getPrice, getCompleteleyQuantity } = useContext(CartContext)
+    let cantidad = getCompleteleyQuantity()
+    let precio = getPrice()
     return (
         <div className="datos-facturacion">
             <h2> Cantidad de productos: {cantidad}</h2>

@@ -1,4 +1,4 @@
-import { getFirestore, collection, getDocs, query, where, doc, getDoc } from "firebase/firestore"
+import { getFirestore, collection, getDocs, query, where, doc, getDoc, addDoc } from "firebase/firestore"
 import { app } from './config'
 
 const db = getFirestore(app)
@@ -30,4 +30,8 @@ export const getProduct = async (id) => {
     } else {
         console.log("No such document!");
     }
+}
+
+export const createOrder = async (order) => {
+    const docRef = await addDoc(collection(db, "orders"), order)
 }
