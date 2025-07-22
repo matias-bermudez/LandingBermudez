@@ -4,6 +4,7 @@ import "./CartForm.css"
 import { useContext, useState } from 'react'
 import { createOrder } from "../../firebase/db"
 import { useNavigate } from "react-router-dom"
+import Swal from "sweetalert2"
 
 function CartForm () {
     const [envio, setEnvio] = useState(false)
@@ -34,7 +35,12 @@ function CartForm () {
                 pay
             }
         }
-        createOrder(order).then(() => {
+        createOrder(order).then(res => {
+            Swal.fire({
+                title: "Compra confirmada!",
+                text: `ID de compra: ${res}`,
+                icon: "success",
+            });
             eraseCart()
             navigate("/")
         })
@@ -53,7 +59,7 @@ function CartForm () {
                     <option value="Credito">Credito</option>
                     <option value="Debito">Debito</option>
                     <option value="Mercado Pago">Mercado Pago</option>
-    \            </select>
+                </select>
             </div>
             <div>
                 <label htmlFor="boton-envio">

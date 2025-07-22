@@ -1,5 +1,6 @@
 import { CartContext } from './CartContext'
 import { useState } from 'react'
+import Swal from "sweetalert2"
 
 function CartProvider ( {children} ) {
     const [cart, setCart] = useState([])
@@ -15,6 +16,11 @@ function CartProvider ( {children} ) {
             cartUpdate[indice] = prod
             setCart(cartUpdate)
         }
+        Swal.fire({
+                title: `${product.name} agregado al carrito.`,
+                text: `(${product.quantity} unidades)`,
+                icon: "success"
+        })
     }
 
     const getQuantity = () => {
