@@ -67,8 +67,24 @@ function CartProvider ( {children} ) {
         setCart([])
     }
 
+    const getPrice = () => {
+        let precio = 0
+        cart.forEach(prod => {
+            precio += (prod.quantity * prod.price)
+        })
+        return precio
+    }
+
+    const getCompleteleyQuantity = () => {
+        let quantity = 0
+        cart.forEach(prod => {
+            quantity += prod.quantity
+        })
+        return quantity
+    }
+
     return (
-        <CartContext.Provider value={ {cart, addToCart, getQuantity, eraseItem, subItem, addItem, eraseCart} }>
+        <CartContext.Provider value={ {cart, addToCart, getQuantity, eraseItem, subItem, addItem, eraseCart, getPrice, getCompleteleyQuantity} }>
             {children}
         </CartContext.Provider>
     )
