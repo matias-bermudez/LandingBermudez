@@ -1,4 +1,4 @@
-import Navbar from './components/NavBar/Navbar'
+import Navbar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import CartForm from './components/CartForm/CartForm'
 import Cart from './components/Cart/Cart'
