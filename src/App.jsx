@@ -1,4 +1,4 @@
-import Navbar from './components/NavBar/NavBar'
+import NavBar from './components/NavBar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import CartForm from './components/CartForm/CartForm'
 import Cart from './components/Cart/Cart'
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <NavBar />
         <Routes>
           <Route path="/" element={
             <ItemListContainer
