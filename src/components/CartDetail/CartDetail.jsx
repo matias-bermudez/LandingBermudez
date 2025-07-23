@@ -54,7 +54,7 @@ function CartDetail () {
             <h2>|</h2>
             <button onClick={handleErase}>Vaciar</button>
             <h2>|</h2>
-            <Link to="/cart/form">
+            <Link to="/cart/checkout">
                 <button>Continuar</button>
             </Link>
         </div>

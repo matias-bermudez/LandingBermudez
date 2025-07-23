@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar/Navbar.jsx'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import CartForm from './components/CartForm/CartForm'
+import Checkout from './components/Checkout/Checkout'
 import Cart from './components/Cart/Cart'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -31,8 +31,8 @@ function App() {
           <Route path="/cart" element={
             <Cart />
           } />
-          <Route path="/cart/form" element={
-            <CartForm /> 
+          <Route path="/cart/checkout" element={
+            <Checkout /> 
           } />
         </Routes>
       </BrowserRouter>
