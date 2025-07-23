@@ -27,3 +27,19 @@
     font-family: 'Poppins', sans-serif;
     font-size: 4rem;
 }
+
+.prod-carrito {
+    transition: filter 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+}
+
+.prod-carrito:hover {
+    transform: scale(1.10) rotateY(10deg) rotateX(5deg);
+    z-index: 10;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.seccion-carrito:has(.prod-carrito:hover) .prod-carrito:not(:hover) {
+    transform: scale(0.97);
+    opacity: 0.7;
+    filter: blur(1px);
+}

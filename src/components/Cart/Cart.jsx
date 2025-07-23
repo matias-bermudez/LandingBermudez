@@ -12,7 +12,7 @@ function Cart () {
                 <CartDetail />
                 {   
                     cart.map(prod => (
-                        <CartItem key={prod.id} producto={prod} />
+                        <CartItem key={prod.id} className="producto-carrito" producto={prod} />
                     ))
                 }
             </section>
