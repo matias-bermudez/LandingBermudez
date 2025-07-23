@@ -1,12 +1,33 @@
-# React + Vite
+# 🛒 Ecommerce Logitech
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido al proyecto **Ecommerce Logitech**, una tienda online desarrollada con **React**, que simula una experiencia de compra de productos tecnológicos como mouses, teclados, auriculares y más.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Demo en vivo
 
-## Expanding the ESLint configuration
+🔗 [Ver en Vercel](https://landing-bermudez-m3qc.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Tecnologías utilizadas
+
+- ⚛️ React
+- 🔥 Firebase
+- 🧭 React Router DOM
+- 🎨 CSS
+- 💾 Context API para gestión de carrito
+
+---
+
+## 🙋 Sobre mí
+
+Hola, soy **Matías Bermúdez** 👋  
+Desarrollador frontend con foco en crear experiencias web atractivas y funcionales.  
+Apasionado por el diseño de interfaces, la interacción con el usuario y la tecnología.
+
+### 📫 Contacto
+- 🌐 [LinkedIn](https://www.linkedin.com/in/mat%C3%ADas-berm%C3%BAdez-m-7a058a26b/)
+- 💻 [GitHub](https://github.com/matias-bermudez)
+
+Siempre abierto a colaborar en proyectos, aprender nuevas tecnologías y seguir creciendo como desarrollador. 🚀
