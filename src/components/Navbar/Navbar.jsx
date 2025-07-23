@@ -1,9 +1,9 @@
 import CartWidget from '../CartWidget/CartWidget'
-import './NavBar.css'
+import './Navbar.css'
 import logo from '../../assets/img/logo-logi.png'
 import { Link } from "react-router-dom"
 
-function NavBar () {
+function Navbar () {
     return (
         <nav className="navbar">
             <ul>
@@ -18,4 +18,4 @@ function NavBar () {
     );
 }
 
-export default NavBar
+export default Navbar
