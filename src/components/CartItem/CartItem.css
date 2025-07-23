@@ -10,9 +10,8 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    background: linear-gradient(145deg, #00ddff, #2d21b5, #220258, #071b2e, #1c1c1c,#071b2e, #220258, #2d21b5, #00ddff);
+    background: linear-gradient(145deg, #00ddff, #2d21b5, #220258, #031627, #0a0a0a,#031627, #220258, #2d21b5, #00ddff);
     height: 200px;
-    box-shadow: 0px 0px 10px white;
     border-radius: 10px;
     padding: 0px 60px;
 }
