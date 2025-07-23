@@ -1,12 +1,12 @@
 import { serverTimestamp } from "firebase/firestore"
 import { CartContext } from "../../context/CartContext"
-import "./CartForm.css"
+import "./Checkout.css"
 import { useContext, useState } from 'react'
 import { createOrder } from "../../firebase/db"
 import { useNavigate } from "react-router-dom"
 import Swal from "sweetalert2"
 
-function CartForm () {
+function Checkout () {
     const [envio, setEnvio] = useState(false)
     const { cart, eraseCart } = useContext(CartContext)
     const navigate = useNavigate()
@@ -81,4 +81,4 @@ function CartForm () {
     )
 }
 
-export default CartForm
+export default Checkout
