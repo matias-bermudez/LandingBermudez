@@ -2,35 +2,39 @@ import { useState, useContext } from "react"
 import "./ItemCount.css"
 import { CartContext } from "../../context/CartContext"
 
-function ItemCount( { item } ) {
+function ItemCount( { item, type } ) {
+    const { addToCart, eraseItem } = useContext(CartContext)
     const [count, setCount] = useState(1)
-    const { addToCart } = useContext(CartContext)
+    if(type === "cart") {
+        setCount(item.quantity)
+    }
     const handleResta = () => {
-        if(count > 1 ){
-            setCount(count - 1)
-        }    
-    }
-
-    const handleSuma = () => {
-        if(count < 99){
-            setCount(count + 1)
+            if(count > 1 ){
+                setCount(count - 1)
+            } else {
+                eraseItem(item)
+            }
         }
-    }
 
-    const handleAddToCart = () => {
-        addToCart({...item, quantity: count})
-    }
+        const handleSuma = () => {
+            if(count < 99){
+                setCount(count + 1)
+            }
+        }
 
+        const handleAddToCart = () => {
+            addToCart({...item, quantity: count})
+        }
     return (
-        <section className="counter-detail">
-            <div className="botones-detail">
-                <button onClick={handleResta}>-</button>
-                <h2>{count}</h2>
-                <button onClick={handleSuma}>+</button>
-            </div> 
-            <button className="agregar-boton-detail" onClick={handleAddToCart}>Agregar</button>
-        </section>       
-    )
+            <section className="counter-detail">
+                <div className="botones-detail">
+                    <button onClick={handleResta}>-</button>
+                    <h2>{count}</h2>
+                    <button onClick={handleSuma}>+</button>
+                </div> 
+                <button className="agregar-boton-detail" onClick={handleAddToCart}>Agregar</button>
+            </section>       
+        )
 }
 
 export default ItemCount

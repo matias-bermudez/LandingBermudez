@@ -14,15 +14,14 @@ function ItemDetail ( { producto } ) {
                 <p>{producto.description}</p>
             </div>
             <div className="agregar">
-                    <ItemCount item={producto} />
+                    <ItemCount item={producto} type={"detail"}/>
             </div>
             
             <div className="fotos-individuales">
                 <img src={producto.img1} alt={producto.name} />
                 <img src={producto.img2} alt={producto.name} />
             </div>
-                        <img src={producto.imgDetail} alt={producto.name} className="foto-principal"/>
-
+            <img src={producto.imgDetail} alt={producto.name} className="foto-principal"/>
         </section>
     )
 }

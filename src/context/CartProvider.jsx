@@ -10,11 +10,17 @@ function CartProvider ( {children} ) {
         if(indice == -1) {
             setCart([...cart, product])
         } else {
-            const cartUpdate = [...cart]
-            const prod = {...cartUpdate[indice]}
-            prod.quantity +=  product.quantity
-            cartUpdate[indice] = prod
-            setCart(cartUpdate)
+            if(product.quantity != cart[indice].quantity) {
+                const cartUpdate = [...cart]
+                const prod = {...cartUpdate[indice]}
+                if(product.quantity > cart[indice].quantity) {
+                    prod.quantity +=  product.quantity
+                } else {
+                    prod.quantity -=  product.quantity
+                }
+                cartUpdate[indice] = prod
+                setCart(cartUpdate)
+            }
         }
         Swal.fire({
                 title: `${product.name} agregado al carrito.`,
