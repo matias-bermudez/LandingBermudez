@@ -12,8 +12,10 @@ function CartItem ( {producto} ) {
 
     return (
         <section key={producto.id} className="prod-carrito">
-            <img src={producto.img1} alt={producto.nick} />
-            <img src={producto.img2} alt={producto.nick} />
+            <div className="imagenes-carrito">
+                <img src={producto.img1} alt={producto.nick} />
+                <img src={producto.img2} alt={producto.nick} />
+            </div>
             <div className="info-txt">
                 <h2>{producto.name}</h2>
             </div>
