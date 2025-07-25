@@ -45,3 +45,39 @@
     margin-bottom: -10px;
     object-fit: contain;
 }
+
+@media (max-width: 1440px) {
+    .navbar ul li a{
+        font-size: 1rem;
+    }
+
+    .navbar ul {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .navbar ul {
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        height: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar ul li a {
+        text-align: left;
+    }
+}
