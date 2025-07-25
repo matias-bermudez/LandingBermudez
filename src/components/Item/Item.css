@@ -3,21 +3,16 @@
     src: url('/fonts/Poppins-SemiBold.ttf');
 }
 
-.agregar-carrito {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.2);
-    border: none;
-    padding: 10px;
-    margin: 10px 0px;
-    width: 150px;
-    height: 36px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 5px #b489ff;
-}
+@media (max-width: 1240px) {
+    .contenedor-productos .producto-individual a {
+        width: 300px;
+        height: 370px;
+    }
 
-.agregar-carrito:hover {
-    box-shadow: none;
-    background-image: linear-gradient(90deg, #30b5ca,#2d21b5, #b489ff, #e073ec);
+        .contenedor-productos .producto-individual a img {
+            width: 290px;
+        }
+
 }
 
 

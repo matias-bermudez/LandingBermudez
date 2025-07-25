@@ -10,8 +10,8 @@
     height: auto;
     align-items: center;
     justify-content: center;
-    width: calc(100% -400px);
-    margin: 25px 200px;
+    width: calc(100% -200px);
+    margin: 25px 100px;
 }
 
 .contenedor-productos a {
@@ -72,3 +72,4 @@
     background-clip: text;
     color: transparent;
 }
+

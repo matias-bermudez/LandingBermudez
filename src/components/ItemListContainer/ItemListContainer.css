@@ -18,6 +18,11 @@
     color: white;
     font-family: 'Poppins', sans-serif;
     margin: 0;
+    text-align: center;
+}
+
+.base-productos .slogan {
+    color: #8e8e8e;
 }
 
 .base-productos h1 {
