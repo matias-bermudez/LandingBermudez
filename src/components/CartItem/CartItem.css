@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     background: linear-gradient(145deg, #00ddff, #2d21b5, #220258, #031627, #0a0a0a,#031627, #220258, #2d21b5, #00ddff);
     height: 200px;
     border-radius: 10px;
@@ -17,7 +17,7 @@
 }
 
 .prod-carrito .info-txt {
-    width: 700px;
+    width: auto;
     margin: 0px 20px;
 }
 
@@ -29,7 +29,7 @@
 .prod-carrito h2, .prod-carrito h3, .prod-carrito p {
     color: white;
     font-family: 'Poppins', sans-serif;
-    margin: 0px auto;
+    margin: 0px;
 }
 
 .prod-carrito h3 {
@@ -39,4 +39,52 @@
 .prod-carrito img{
     object-fit: contain;
     height: 100px;
+}
+
+@media (max-width: 1400px) {
+    .prod-carrito {
+        width: 1000px;
+        margin: auto 10px;
+    }
+
+    .prod-carrito .precio {
+        font-size: 0.8rem;
+
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .prod-carrito {
+        width: 900px;
+        height: 150px;
+    }
+
+    .prod-carrito img {
+        width: 90px;
+    }
+
+    .prod-carrito .info-txt h3 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .prod-carrito {
+        width: 700px;
+    }
+
+    .prod-carrito .info-txt h3 {
+        font-size: 0.8rem;
+    }
+
+    .prod-carrito img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .prod-carrito {
+        width: 500px;
+    }
 }

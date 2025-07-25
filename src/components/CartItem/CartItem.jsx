@@ -16,7 +16,6 @@ function CartItem ( {producto} ) {
             <img src={producto.img2} alt={producto.nick} />
             <div className="info-txt">
                 <h2>{producto.name}</h2>
-                <h3>{producto.description}</h3>    
             </div>
             <h2 className="precio">U$S {producto.price}</h2>
             <ItemCount item={producto} type={"cart"}/>

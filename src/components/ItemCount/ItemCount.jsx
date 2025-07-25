@@ -1,13 +1,15 @@
-import { useState, useContext } from "react"
+import { useState, useContext, useEffect } from "react"
 import "./ItemCount.css"
 import { CartContext } from "../../context/CartContext"
 
 function ItemCount( { item, type } ) {
     const { addToCart, eraseItem } = useContext(CartContext)
     const [count, setCount] = useState(1)
-    if(type === "cart") {
-        setCount(item.quantity)
-    }
+    useEffect(() => {
+        if (type === "cart") {
+            setCount(item.quantity)
+        }
+    }, [type, item])
     const handleResta = () => {
             if(count > 1 ){
                 setCount(count - 1)
