@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Item( {producto} ) {
     return (
-        <div key={producto.id} className={producto.category}>
+        <div key={producto.id} className="producto-individual">
             <Link to={`/products/${producto.id}`}>
                 <img src={producto.img1} alt={producto.name} />
                 <h1>{producto.name}</h1>
