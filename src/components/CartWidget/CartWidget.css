@@ -34,3 +34,9 @@
     object-fit: contain;
     width: 50px;
 }
+
+@media (max-width: 1200px) {
+    .carrito button img {
+        width: 40px;
+    }
+}
