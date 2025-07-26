@@ -18,3 +18,34 @@
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+
+@media (max-width: 1400px) {
+    .datos-facturacion h2 {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .datos-facturacion {
+        flex-direction: column;
+        gap: 0px;
+        margin-bottom: 15px;
+    }
+
+    .datos-facturacion h2 {
+        margin: 2px;
+    }
+}
+
+@media (max-width: px) {
+    
+}
+
+@media (max-width: px) {
+    
+}
+
+@media (max-width: px) {
+    
+}

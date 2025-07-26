@@ -12,6 +12,7 @@
     justify-content: space-around;
     align-items: center;
     margin: 10px auto;
+    gap: 15px;
 }
 
 .seccion-vacio {
@@ -65,5 +66,17 @@
 @media (max-width: 800px) {
     .seccion-carrito {
         width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .seccion-carrito {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .seccion-carrito {
+        width: 350px;
     }
 }
