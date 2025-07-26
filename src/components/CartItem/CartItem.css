@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     background: linear-gradient(145deg, #00ddff, #2d21b5, #220258, #031627, #0a0a0a,#031627, #220258, #2d21b5, #00ddff);
     height: 200px;
     border-radius: 10px;
@@ -39,6 +39,15 @@
 .prod-carrito img{
     object-fit: contain;
     height: 100px;
+}
+
+.prod-carrito .vaciar-carrito {
+    background-color: #b3010174;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 8px;
+    font-size: 1.5rem;
 }
 
 @media (max-width: 1400px) {

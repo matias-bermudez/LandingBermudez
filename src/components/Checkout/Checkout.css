@@ -3,11 +3,20 @@
     src: url('/fonts/Poppins-SemiBold.ttf');
 }
 
+.checkout {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
 .formulario {
     display: flex;
     flex-direction: column;
-    width: calc(100% -1600px);
-    margin: 10px 800px;
+    width: 800px;
+    margin: 10px 10px;
+    align-items: center;
     gap: 25px;
     background-color: white;
     padding: 20px 40px;
@@ -19,10 +28,57 @@
 }
 
 .formulario input {
+    width: 300px;
     padding: 5px;
+
+}
+
+.formulario .botones-envio input#boton-envio,
+.formulario .botones-envio input#boton-sin-envio{
+    width: auto;
+}
+
+.formulario .botones-envio {
+    display: flex;
+    flex-direction: column;
 }
 
 .formulario div {
     display: flex;
     justify-content: space-around;
+}
+
+@media (max-width: 1600px) {
+    .formulario {
+        width: calc(100% -400px);
+    margin: 10px 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .formulario {
+        width: calc(100% -800px);
+    margin: 10px 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .formulario {
+        width: calc(100% -100px);
+        margin: 10px 50px;
+    }
+}
+
+@media (max-width: 400px) {
+    .formulario {
+        width: calc(100% -100px);
+    margin: 10px 800px;
+    }
+}
+
+@media (max-width: px) {
+    .formulario {
+        width: calc(100% -1600px);
+    margin: 10px 800px;
+    }
 }

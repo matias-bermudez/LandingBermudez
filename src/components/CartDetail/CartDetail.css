@@ -19,6 +19,23 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.datos-facturacion a button, .datos-facturacion button {
+    font-family: 'Poppins', sans-serif;
+}
+
+.datos-facturacion button {
+    background-color: #b3010174;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 8px;
+    color: white;
+}
+
+.datos-facturacion a button {
+    background-color: rgb(41, 148, 41);
+}
+
 @media (max-width: 1400px) {
     .datos-facturacion h2 {
         font-size: 1rem;
@@ -36,16 +53,4 @@
     .datos-facturacion h2 {
         margin: 2px;
     }
-}
-
-@media (max-width: px) {
-    
-}
-
-@media (max-width: px) {
-    
-}
-
-@media (max-width: px) {
-    
 }
